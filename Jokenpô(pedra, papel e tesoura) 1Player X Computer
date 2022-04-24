@@ -1,0 +1,51 @@
+import random
+print("(1)PEDRA (2)PAPEL (3)TESOURA")
+p1 = int(input("ESCREVA UM NÚMERO DAS 3 OPÇÕES: "))
+n1 = 1
+n2 = 2
+n3 = 3
+list = [n1, n2, n3]
+computador = random.choice(list)
+#lista das variáveis
+if computador == 1 and p1 == 1:
+    print("escolha do computador: PEDRA")
+    print("escolha do jogador: PEDRA")
+    print("EMPATE")
+if computador == 1 and p1 == 2:
+    print("escolha do computador: PEDRA")
+    print("escolha do jogador: PAPEL")
+    print(" jogador vence")
+if computador == 1 and p1 == 3:
+    print("escolha do computador: PEDRA")
+    print("escolha do jogador: TESOURA")
+    print(" computador vence")
+if computador == 2 and p1 == 1:
+    print("escolha do computador: PAPEL")
+    print("escolha do jogador: PEDRA")
+    print(" computador vence")
+if computador == 2 and p1 == 2:
+    print("escolha do computador: PAPEL")
+    print("escolha do jogador: PAPEL")
+    print(" empate")
+if computador == 2 and p1 == 3:
+    print("escolha do computador: PAPEL")
+    print("escolha do jogador: TESOURA")
+    print(" jogador vence")
+if computador == 3 and p1 == 1:
+    print("escolha do computador: TESOURA")
+    print("escolha do jogador: PEDRA")
+    print("jogador vence")
+if computador == 3 and p1 == 2:
+    print("escolha do computador: TESOURA")
+    print("escolha do jogador: PAPEL")
+    print("computador vence")
+if computador == 3 and p1 ==3:
+    print("escolha do computador: TESOURA")
+    print("escolha do jogador: TESOURA")
+    print("empate")
+if p1 > 3:
+    print("o número não consta nas configurações")
+    print("digite um número mais baixo (entre 1, 2 e 3)")
+if p1 < 1:
+    print("o número não consta nas configurações")
+    print("digite um número maior (entre 1, 2 e 3)")
